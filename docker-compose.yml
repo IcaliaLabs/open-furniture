@@ -1,0 +1,33 @@
+version: "2"
+
+volumes:
+  gems:
+    driver: local
+
+services:
+  web:
+    image: icalialabs/open-furniture:dev
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    command: "bundle exec middleman server --server-name 0.0.0.0 --verbose"
+    working_dir: /usr/src/app
+    ports:
+      - 4567:4567
+      - 35729:35729
+    volumes:
+      # Mount our app code directory (".") into our app containers at the
+      # "/usr/src/app" folder:
+      - .:/usr/src/app
+
+        # Mount the 'gems' volume on the folder that stores bundled gems:
+      - gems:/usr/local/bundle
+
+    # Keep the stdin open, so we can attach to our app container's process
+    # and do things such as byebug, etc:
+    stdin_open: true
+
+    # Enable sending signals (CTRL+C, CTRL+P + CTRL+Q) into the container:
+    tty: true
+    environment:
+      LANG: 'C.UTF-8'
