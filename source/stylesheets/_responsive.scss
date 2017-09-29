@@ -1,0 +1,52 @@
+//############################################//
+//######## Responsive Utilities #############//
+//###########################################//
+
+$breakpoints: (
+    s: $small, // Mobile Screens
+    m: $medium, // Tablet Screens
+    l: $large, // Normal Screens
+    w: $wide // Wide Screens
+);
+
+//############################################//
+//# Customize Alom editing the variables  ###//
+//###########################################//
+// Example: @include breakpoint(s);
+@mixin breakpoint($bp) {
+  @media screen and (max-width: #{map-get($breakpoints, $bp)}) {
+    @content;
+  }
+}
+
+
+//############################################//
+//####### Hide elements on devices  #########//
+//###########################################//
+@each $bp in map-keys($breakpoints) {
+  .hide-on-#{$bp} {
+    @include breakpoint($bp) {
+      display: none !important;
+    }
+  }
+}
+
+//############################################//
+//### Hide elements in only this devices  ###//
+//###########################################//
+@each $bp in map-keys($breakpoints) {
+  .hide-on-#{$bp}-only {
+    @media screen and  (min-width: prev($breakpoints, #{$bp})) and (max-width: next($breakpoints, #{$bp})) {
+      display: none !important;
+    }
+  }
+}
+@each $bp in map-keys($breakpoints) {
+  .show-on-#{$bp} {
+    visibility: hidden;
+
+    @media screen and  (min-width: prev($breakpoints, #{$bp})) and (max-width: next($breakpoints, #{$bp})) {
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.footer {
+  background-color: #161616;
+  padding: 100px 0;
+
+  &__container {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  &__ornament {
+    color: #fff;
+    font-family: $primary-type;
+    font-size: px-to-rems(18);
+  }
+
+  &__about {
+    color: #fff;
+    font-family: $second-type;
+    font-size: px-to-rems(14);
+    line-height: px-to-rems(28);
+
+    span {
+      font-family: $primary-type;
+      font-size: px-to-rems(16);
+      letter-spacing: px-to-rems(1.61);
+      margin-bottom: .5rem;
+      text-transform: uppercase;
+    }
+
+    &-link {
+      color: #FF0B38;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    display: block;
+    letter-spacing: px-to-rems(1.61);
+    line-height: px-to-rems(28);
+    font-size: px-to-rems(16);
+    text-transform: uppercase;
+  }
+  &__link:hover {
+    color: $primary-beige;
+  }
+}

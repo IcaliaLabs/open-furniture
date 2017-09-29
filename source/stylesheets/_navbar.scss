@@ -1,0 +1,28 @@
+.full-navbar {
+  background-color: #fff;
+  height: 120px;
+  padding: 0 2rem;
+
+  &__logo {
+    float: left;
+  }
+
+  .furni-logo {
+    height: 40px;
+  }
+
+  &__items {
+    font-family: $second-type;
+    font-size: px-to-rems(16);
+    float: right;
+  }
+
+  &__items-link {
+    display: inline;
+    margin: 0 1rem;
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

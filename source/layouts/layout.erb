@@ -6,11 +6,50 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "Open Furniture" %></title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,500,700|Work+Sans:400,700" rel="stylesheet">
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+    <header class="full-navbar">
+      <div class="full-navbar__logo align vertical">
+        <%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/furni-logo.svg', class: 'furni-logo'%>
+      </div>
+      <ul class="full-navbar__items align vertical">
+        <li class="full-navbar__items-link"><a href="catalog.html">Catalog</a></li>
+        <li class="full-navbar__items-link"><a href="faq.html">FAQ</a></li>
+        <li class="full-navbar__items-link"><a href="philosophy.html">Philosophy</a></li>
+      </ul>
+    </header>
     <%= yield %>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="row">
+          <div class="col-5">
+            <h1 class="footer__ornament">—</h1>
+            <p class="footer__about">
+              <span>Open Furniture</span><br>
+              An open-source furniture collection.<br>
+              ©2017 Furni. All right reserved.<br>
+              <br>
+              <br>
+              Powered by <a class="footer__about-link" href="http://icalialabs.com">Icalia Labs</a>
+            </p>
+          </div>
+          <div class="col-3">
+            <h1 class="footer__ornament">—</h1>
+            <a class="footer__link" href="catalog.html">Home</a>
+            <a class="footer__link" href="catalog.html">Catalog</a>
+            <a class="footer__link" href="faq.html">FAQ</a>
+            <a class="footer__link" href="philosophy.html">Philosophy</a>
+          </div>
+          <div class="col-3">
+            <h1 class="footer__ornament">—</h1>
+            <a class="footer__link" href="https://github.com/IcaliaLabs/open-furniture">Github</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,64 @@
+.catalog {
+
+  &__cover {
+    background-image: url(//s3-us-west-2.amazonaws.com/il-open-furniture/header-catalog-test.png);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+
+    &-title {
+      color: #fff;
+      font-family: $primary-type;
+      font-size: px-to-rems(30);
+      font-weight: 500;
+      letter-spacing: 3.53px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  &__items-container {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 80%;
+
+    .left {
+      float: left;
+
+      @include breakpoint(s) {
+        float: none;
+      }
+    }
+
+    .right {
+      float: right;
+
+      @include breakpoint(s) {
+        float: none;
+      }
+    }
+  }
+
+  &__product-card {
+    margin-bottom: 100px;
+    text-align: center;
+
+    &-title {
+      font-size: px-to-rems(16);
+      font-family: $second-type;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    &-description {
+      font-family: $second-type;
+      font-size: px-to-rems(14);
+      font-weight: 400;
+    }
+  }
+
+  &__product-shot {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+}
