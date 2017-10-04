@@ -1,0 +1,101 @@
+.furniture {
+
+  &__intro {
+    padding: 1rem;
+
+    &-cover {
+      display: block;
+      margin: 1rem;
+      text-align: center;
+    }
+
+    &-photo {
+      width: 90%;
+    }
+
+    &-description {
+      margin: 2rem;
+      margin-top: 10rem;
+    }
+
+    &-title {
+      font-size: px-to-rems(36);
+      font-weight: 200;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    &-subtitle {
+      font-family: $second-type;
+      font-size: px-to-rems(20);
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    &-size {
+      font-family: $second-type;
+      font-size: px-to-rems(16);
+      line-height: px-to-rems(33);
+      margin-bottom: 1rem;
+    }
+
+    &-seats {
+      font-family: $second-type;
+      font-size: px-to-rems(16);
+      margin-bottom: 2rem;
+    }
+
+    &-download {
+      border: 1px solid #000;
+      background-color: #fff;
+      font-family: $second-type;
+      font-size: px-to-rems(16);
+      letter-spacing: px-to-rems(3);
+      padding: 1rem 2.5rem;
+      text-transform: uppercase;
+      transition: all .2s ease-in;
+    }
+
+    &-download:hover {
+      border: 1px solid #000;
+      background-color: $primary-beige;
+      font-family: $second-type;
+      font-size: px-to-rems(16);
+      letter-spacing: px-to-rems(3);
+      padding: 1rem 2.5rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__people-icon {
+    margin-right: .5rem;
+  }
+
+  &__about-outline {
+    text-align: center;
+  }
+
+  &__about-description {
+    padding: 1rem;
+  }
+
+  &__about-title {
+    font-size: px-to-rems(28);
+  }
+
+  &__about-text {
+    font-family: $second-type;
+    font-size: px-to-rems(16);
+    font-weight: 400;
+    line-height: px-to-rems(26);
+  }
+
+  &__related-title {
+    font-size: px-to-rems(36);
+    font-weight: 200;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
