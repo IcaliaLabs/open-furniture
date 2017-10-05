@@ -110,6 +110,7 @@ GEM
       activesupport (>= 3.1)
     parallel (1.12.0)
     public_suffix (3.0.0)
+    puma (3.10.0)
     rack (1.6.8)
     rack-contrib (1.6.0)
       rack (~> 1.4)
@@ -149,6 +150,7 @@ DEPENDENCIES
   middleman-compass (>= 4.0.0)
   middleman-livereload
   middleman-sprockets (~> 4.0.0.rc)
+  puma
   rack-contrib
   scss_lint
   therubyracer
