@@ -1,0 +1,17 @@
+.faq {
+
+  &__cover {
+    background-color: $primary-beige;
+    height: 400px;
+
+    &-title {
+      color: #000;
+      font-family: $primary-type;
+      font-size: px-to-rems(30);
+      font-weight: 500;
+      letter-spacing: 3.53px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}

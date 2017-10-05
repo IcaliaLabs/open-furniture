@@ -20,6 +20,7 @@
   &__items-container {
     margin: 0 auto;
     margin-top: 100px;
+    max-width: 1280px;
     width: 80%;
 
     .left {
@@ -58,7 +59,7 @@
   }
 
   &__product-shot {
-    margin-bottom: 1rem;
+    padding: 1rem;
     width: 100%;
   }
 }
