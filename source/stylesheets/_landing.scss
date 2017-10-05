@@ -1,0 +1,67 @@
+.landing {
+
+  &__intro {
+    border: 15px solid $primary-beige;
+
+    &-cover {
+      background: url(//s3-us-west-2.amazonaws.com/il-open-furniture/landing-cover.png);
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+      height: 100vh;
+    }
+
+    &-about {
+      margin-top: 6rem;
+      padding: 2rem;
+    }
+
+    &-title {
+      font-size: px-to-rems(28);
+    }
+
+    &-text {
+      font-family: $second-type;
+      font-size: px-to-rems(16);
+      font-weight: 400;
+      line-height: px-to-rems(24);
+      width: 50%;
+      min-width: 350px;
+    }
+
+    &-showcase {
+      margin: 5rem 0;
+    }
+
+    &-break {
+      background-color: $primary-beige;
+      height: 400px;
+      text-align: center;
+    }
+
+    &-break-title {
+      font-size: px-to-rems(36);
+      font-weight: 200;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__product-card {
+    margin: 100px 0;
+    text-align: center;
+
+    &-title {
+      font-size: px-to-rems(16);
+      font-family: $second-type;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    &-description {
+      font-family: $second-type;
+      font-size: px-to-rems(14);
+      font-weight: 400;
+    }
+  }
+}

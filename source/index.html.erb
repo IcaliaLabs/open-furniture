@@ -1,3 +1,67 @@
 ---
+layout: landing-layout
 title: Open Furniture
 ---
+
+<div class="landing__intro">
+  <div class="row">
+    <div class="col-6">
+      <div class="landing__intro-cover">
+      </div>
+    </div>
+    <div class="col-6">
+      <header class="full-navbar">
+        <div class="full-navbar__logo align vertical">
+          <a href="../index.html"> <%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/of-icon.svg', class: 'furni-logo'%> </a>
+        </div>
+        <ul class="full-navbar__items align vertical">
+          <li class="full-navbar__items-link"><a href="../catalog.html">Catalog</a></li>
+          <li class="full-navbar__items-link"><a href="../faq.html">FAQ</a></li>
+          <li class="full-navbar__items-link"><a href="../philosophy.html">Philosophy</a></li>
+        </ul>
+      </header>
+      <div class="landing__intro-about">
+        <p class="landing__intro-title">
+          An open-source<br>
+          furniture collection<br>
+          —
+        </p>
+        <br>
+        <p class="landing__intro-text">
+          Here you can find a furniture collection for home, workplace or both. You can download the files with the templates to print and assemble them on your own or with the help from a local carpenter.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="landing__intro-showcase">
+    <div class="row">
+      <div class="col-4">
+        <div class="landing__product-card left">
+          <a href="../furniture/team-desk-large.html"><%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/landing-large-desk.png', class: 'catalog__product-shot' %></a>
+          <p class="catalog__product-card-title">Team Desk - Large</p>
+          <p class="catalog__product-card-description">Team workstation for 4-6 people</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="landing__product-card">
+          <a href="../furniture/lounge.html"><%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/landing-lounge.png', class: 'catalog__product-shot' %></a>
+          <p class="catalog__product-card-title">Lounge</p>
+          <p class="catalog__product-card-description">For that mid-day meditation</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="landing__product-card right">
+          <a href="../furniture/service-table-large.html"><%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/landing-service-table.png', class: 'catalog__product-shot' %></a>
+          <p class="catalog__product-card-title">Service Table - Large</p>
+          <p class="catalog__product-card-description">Great for organizing goodies</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="landing__intro-break">
+    <div class="align vertical">
+      <p class="landing__intro-break-title">View the collection</p>
+      <a class="btn-std" href="../catalog.html">Go to Catalog</a>
+    </div>
+  </div>
+</div>
