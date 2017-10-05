@@ -16,3 +16,23 @@ body {
   font-family: $primary-type;
 
 }
+
+@mixin btn-std {
+    border: 1px solid #000;
+    background-color: #fff;
+    font-family: $second-type;
+    font-size: px-to-rems(16);
+    letter-spacing: px-to-rems(3);
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    transition: all .2s ease-in;
+}
+
+.btn-std {
+  @include btn-std;
+}
+
+.btn-std:hover {
+  @include btn-std;
+  background-color: $primary-beige;
+}
