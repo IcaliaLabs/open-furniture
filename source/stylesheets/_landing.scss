@@ -1,0 +1,32 @@
+.landing {
+
+  &__intro {
+    border: 15px solid $primary-beige;
+
+    &-cover {
+      background: url(//s3-us-west-2.amazonaws.com/il-open-furniture/landing-cover.png);
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+      height: 100vh;
+    }
+
+    &-about {
+      margin-top: 5rem;
+      padding: 2rem;
+    }
+
+    &-title {
+      font-size: px-to-rems(28);
+    }
+
+    &-text {
+      font-family: $second-type;
+      font-size: px-to-rems(16);
+      font-weight: 400;
+      line-height: px-to-rems(26);
+      width: 50%;
+      min-width: 350px;
+    }
+  }
+}
