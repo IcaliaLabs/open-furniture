@@ -7,12 +7,13 @@
     <title><%= current_page.data.title || "Open Furniture" %></title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,500,700|Work+Sans:400,700" rel="stylesheet">
     <%= stylesheet_link_tag "site" %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
     <header class="full-navbar">
       <div class="full-navbar__logo align vertical">
-        <a href="../index.html"> <%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/furni-logo.svg', class: 'furni-logo'%> </a>
+        <a href="../index.html"> <%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/furni-logo.png', class: 'furni-logo'%> </a>
       </div>
       <ul class="full-navbar__items align vertical">
         <li class="full-navbar__items-link"><a href="../catalog.html">Catalog</a></li>
@@ -20,6 +21,15 @@
         <li class="full-navbar__items-link"><a href="../philosophy.html">Philosophy</a></li>
       </ul>
     </header>
+
+    <div id='cssmenu'>
+      <ul class="std-text">
+        <li><a href='../index.html'>Home</a></li>
+        <li><a href='../catalog.html'>Catalog</a></li>
+        <li><a href='../faq.html'>FAQ</a></li>
+        <li><a href='../philosophy.html'>Philosophy</a></li>
+      </ul>
+    </div>
     <%= yield %>
     <footer class="footer">
       <div class="footer__container">
@@ -32,9 +42,9 @@
               ©2017 Furni. All right reserved.<br>
               <br>
               <br>
-              Powered by <a class="footer__about-link" href="http://icalialabs.com">Icalia Labs</a>
+              Powered by <a class="footer__about-link-icalia" href="http://icalialabs.com">Icalia Labs</a>
               <br>
-              Furniture Design by <a class="footer__about-link" href="https://www.behance.net/amortera">Alonso Mortera</a>
+              Furniture Design by <a class="footer__about-link-alonso" href="https://www.behance.net/amortera">Alonso Mortera</a>
             </p>
           </div>
           <div class="col-3">

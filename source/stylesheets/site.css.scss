@@ -9,8 +9,10 @@
 @import 'catalog';
 @import 'landing';
 @import 'navbar';
+@import 'responsive-navbar';
 @import 'footer';
 @import 'furniture';
+@import 'faq';
 
 body {
   font-family: $primary-type;
