@@ -27,8 +27,16 @@
       text-transform: uppercase;
     }
 
-    &-link {
+    &-link-icalia {
       color: #FF0B38;
+    }
+
+    &-link-alonso {
+      color: $primary-beige;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   }
 

@@ -2,7 +2,7 @@
 
   &__cover {
     background-color: $primary-beige;
-    height: 400px;
+    height: 500px;
 
     &-title {
       color: #000;
@@ -13,5 +13,39 @@
       text-align: center;
       text-transform: uppercase;
     }
+  }
+
+  &__content {
+    margin: 0 auto;
+    padding: 3rem 0;
+    width: 80%;
+  }
+
+  &__question-container {
+    text-align: center;
+    padding-bottom: 3rem;
+
+    hr {
+      border: 1px solid #EDEDED;
+    }
+  }
+
+  &__question-title {
+    font-size: px-to-rems(36);
+    font-weight: 200;
+    margin-bottom: 1rem;
+    padding-top: 3rem;
+    text-transform: uppercase;
+  }
+
+  &__question-text {
+    font-family: $second-type;
+    font-size: px-to-rems(16);
+    font-weight: 400;
+    line-height: px-to-rems(24);
+    min-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    width: 50%;
   }
 }
