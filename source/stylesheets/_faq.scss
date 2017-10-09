@@ -1,11 +1,13 @@
 .faq {
 
   &__cover {
-    background-color: $primary-beige;
+    background-image: url(//s3-us-west-2.amazonaws.com/il-open-furniture/header-catalog-test.png);
+    background-position: center;
+    background-size: cover;
     height: 500px;
 
     &-title {
-      color: #000;
+      color: #fff;
       font-family: $primary-type;
       font-size: px-to-rems(30);
       font-weight: 500;
@@ -19,6 +21,25 @@
     margin: 0 auto;
     padding: 3rem 0;
     width: 80%;
+  }
+
+  &__question-list-title {
+    font-size: px-to-rems(20);
+    font-weight: 200;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  &__question-list-links {
+    font-family: $second-type;
+    font-size: px-to-rems(14);
+    font-weight: 400;
+    line-height: px-to-rems(22);
+    padding-right: 2rem;
+
+    a:hover {
+      color: #FF0B38;
+    }
   }
 
   &__question-container {
@@ -45,24 +66,5 @@
     min-width: 350px;
     padding-bottom: 3rem;
     width: 80%;
-  }
-
-  &__question-list-title {
-    font-size: px-to-rems(20);
-    font-weight: 200;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-  }
-
-  &__question-list-links {
-    font-family: $second-type;
-    font-size: px-to-rems(14);
-    font-weight: 400;
-    line-height: px-to-rems(22);
-    padding-right: 2rem;
-
-    a:hover {
-      color: #FF0B38;
-    }
   }
 }
