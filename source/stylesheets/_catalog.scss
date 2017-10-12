@@ -1,7 +1,7 @@
 .catalog {
 
   &__cover {
-    background-image: url(//s3-us-west-2.amazonaws.com/il-open-furniture/catalog-cover.jpg);
+    background-image: url(//s3-us-west-2.amazonaws.com/il-open-furniture/catalog-cover-ii.jpg);
     background-position: center;
     background-size: cover;
     height: 500px;
@@ -14,6 +14,15 @@
       letter-spacing: 3.53px;
       text-align: center;
       text-transform: uppercase;
+    }
+
+    &-text {
+      color: #fff;
+      font-family: $second-type;
+      font-size: px-to-rems(14);
+      font-weight: 400;
+      margin: 0 auto;
+      text-align: center;
     }
   }
 
@@ -63,5 +72,26 @@
   &__product-shot {
     padding: 1rem;
     width: 100%;
+  }
+
+  &__cover-work {
+    background-image: url(//s3-us-west-2.amazonaws.com/il-open-furniture/work-cover.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+  }
+
+  &__cover-dining {
+    background-image: url(//s3-us-west-2.amazonaws.com/il-open-furniture/dining-cover.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+  }
+
+  &__cover-home {
+    background-image: url(//s3-us-west-2.amazonaws.com/il-open-furniture/catalog-cover.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
   }
 }
