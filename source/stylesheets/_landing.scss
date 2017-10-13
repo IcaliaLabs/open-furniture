@@ -4,11 +4,40 @@
     border: 15px solid $primary-beige;
 
     &-cover {
-      background: url(//s3-us-west-2.amazonaws.com/il-open-furniture/main-cover.jpg);
-      background-position: center;
-      background-size: cover;
       height: 100%;
       height: 100vh;
+      width: 100%;
+    }
+
+    &-slider{
+
+      @keyframes slider-land {
+        0%{
+          background-image: url(//s3-us-west-2.amazonaws.com/il-open-furniture/main-cover-1.jpg);
+        }
+        33%{
+          background-image: url(//s3-us-west-2.amazonaws.com/il-open-furniture/main-cover-2.jpg);
+        }
+        66%{
+          background-image: url(//s3-us-west-2.amazonaws.com/il-open-furniture/main-cover-3.jpg);
+        }
+        100%{
+          background-image: url(//s3-us-west-2.amazonaws.com/il-open-furniture/main-cover-1.jpg);
+        }
+      }
+
+      animation: slider-land ease 21s both infinite;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index:0;
+
+      /*-- Fallback image for mobile --*/
+      background-image:	url(//s3-us-west-2.amazonaws.com/il-open-furniture/main-cover-1.jpg);
+
     }
 
     &-about {
@@ -35,15 +64,36 @@
 
     &-break {
       background-color: $primary-beige;
-      height: 400px;
+      padding: 5rem 0;
       text-align: center;
     }
 
     &-break-title {
-      font-size: px-to-rems(36);
+      font-size: px-to-rems(28);
       font-weight: 200;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       text-transform: uppercase;
+    }
+
+    &-process {
+      padding-bottom: 5rem;
+      margin: 0 auto;
+      width: 90%;
+
+      &-title {
+        font-size: px-to-rems(16);
+        font-family: $second-type;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      &-text {
+        font-family: $second-type;
+        font-size: px-to-rems(14);
+        font-weight: 400;
+        margin: 0 auto;
+        width: 80%;
+      }
     }
   }
 
@@ -63,5 +113,10 @@
       font-size: px-to-rems(14);
       font-weight: 400;
     }
+  }
+
+  &__product-shot {
+    padding: 1rem;
+    width: 70%;
   }
 }
