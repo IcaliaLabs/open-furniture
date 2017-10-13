@@ -7,17 +7,21 @@ title: Open Furniture
   <div class="row">
     <div class="col-6">
       <div class="landing__intro-cover">
+        <div class="landing__intro-slider">
+
+        </div>
       </div>
     </div>
     <div class="col-6">
       <header class="full-navbar">
         <div class="full-navbar__logo align vertical">
-          <a href="../index.html"> <%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/of-icon.svg', class: 'furni-logo'%> </a>
+          <a href="../index.html"> <%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/osf-logo.svg', class: 'furni-logo'%> </a>
         </div>
         <ul class="full-navbar__items align vertical">
           <li class="full-navbar__items-link"><a href="../catalog.html">Catalog</a></li>
           <li class="full-navbar__items-link"><a href="../faq.html">FAQ</a></li>
           <li class="full-navbar__items-link"><a href="../philosophy.html">Philosophy</a></li>
+          <li class="full-navbar__items-link"><a href="../where-to-make.html">Where to make?</a></li>
         </ul>
       </header>
       <div class="landing__intro-about">
@@ -37,21 +41,21 @@ title: Open Furniture
     <div class="row">
       <div class="col-4">
         <div class="landing__product-card left">
-          <a href="../furniture/team-desk-large.html"><%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/landing-large-desk.png', class: 'catalog__product-shot' %></a>
-          <p class="catalog__product-card-title">Team Desk - Large</p>
+          <a href="../furniture/team-desk-large.html"><%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/large-desk-landing.png', class: 'landing__product-shot' %></a>
+          <p class="catalog__product-card-title">Large Desk</p>
           <p class="catalog__product-card-description">Team workstation for 4-6 people</p>
         </div>
       </div>
       <div class="col-4">
         <div class="landing__product-card">
-          <a href="../furniture/lounge.html"><%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/landing-lounge.png', class: 'catalog__product-shot' %></a>
+          <a href="../furniture/lounge.html"><%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/lounge-landing.png', class: 'landing__product-shot' %></a>
           <p class="catalog__product-card-title">Lounge</p>
           <p class="catalog__product-card-description">For that mid-day meditation</p>
         </div>
       </div>
       <div class="col-4">
         <div class="landing__product-card right">
-          <a href="../furniture/service-table-large.html"><%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/landing-service-table.png', class: 'catalog__product-shot' %></a>
+          <a href="../furniture/service-table-large.html"><%= image_tag '//s3-us-west-2.amazonaws.com/il-open-furniture/service-table-landing.png', class: 'landing__product-shot' %></a>
           <p class="catalog__product-card-title">Service Table - Large</p>
           <p class="catalog__product-card-description">Great for organizing goodies</p>
         </div>
@@ -59,9 +63,28 @@ title: Open Furniture
     </div>
   </div>
   <div class="landing__intro-break">
-    <div class="align vertical">
-      <p class="landing__intro-break-title">View the collection</p>
-      <a class="btn-std" href="../catalog.html">Go to Catalog</a>
+    <div class="landing__intro-process">
+      <p class="landing__intro-break-title">What's the process?</p>
+      <div class="row">
+        <div class="col-3">
+          <p class="landing__intro-process-title">Browse the catalog<br>—</p>
+          <p class="landing__intro-process-text">The catalog includes all types of furniture from work desks to shelves and sofas.</p>
+        </div>
+        <div class="col-3">
+          <p class="landing__intro-process-title">Download your furniture digital pack<br>—</p>
+          <p class="landing__intro-process-text">The pack includes an image of the object, a PDF with the object’s specifications, and a .dxf file with the furniture’s custom measurements to have it cut-out by your local carpenter.</p>
+        </div>
+        <div class="col-3">
+          <p class="landing__intro-process-title">Visit a local carpenter or maker<br>—</p>
+          <p class="landing__intro-process-text">Visit a local maker that has a machine that can read .dxf files from the pack.</p>
+        </div>
+        <div class="col-3">
+          <p class="landing__intro-process-title">Build and assemble<br>—</p>
+          <p class="landing__intro-process-text">You can ask the carpenter for help or you can even assemble the object yourself if want, although it is recommended to ask for help form the experts.</p>
+        </div>
+      </div>
     </div>
+    <p class="landing__intro-break-title">View the collection</p>
+    <a class="btn-std" href="../catalog.html">Go to Catalog</a>
   </div>
 </div>
