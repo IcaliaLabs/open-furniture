@@ -5,6 +5,12 @@
   &__container {
     margin: 0 auto;
     width: 80%;
+
+    &-item {
+      @include breakpoint(s) {
+        margin-top: 2rem;
+      }
+    }
   }
 
   &__ornament {

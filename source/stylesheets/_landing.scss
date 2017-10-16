@@ -27,17 +27,14 @@
       }
 
       animation: slider-land ease 21s both infinite;
-      height: 100%;
-      width: 100%;
-      top: 0;
+      background-image:	url(//s3-us-west-2.amazonaws.com/il-open-furniture/main-cover-1.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      height: 100%;
+      top: 0;
+      width: 100%;
       z-index:0;
-
-      /*-- Fallback image for mobile --*/
-      background-image:	url(//s3-us-west-2.amazonaws.com/il-open-furniture/main-cover-1.jpg);
-
     }
 
     &-about {
@@ -55,7 +52,7 @@
       font-weight: 400;
       line-height: px-to-rems(24);
       width: 50%;
-      min-width: 350px;
+      min-width: 300px;
     }
 
     &-showcase {
@@ -93,6 +90,10 @@
         font-weight: 400;
         margin: 0 auto;
         width: 80%;
+
+        @include breakpoint(s) {
+          margin-bottom: 2rem;
+        }
       }
     }
   }

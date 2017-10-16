@@ -37,6 +37,10 @@
     line-height: px-to-rems(22);
     padding-right: 2rem;
 
+    @include breakpoint(s) {
+      margin-bottom: 2rem;
+    }
+
     a:hover {
       color: #FF0B38;
     }
